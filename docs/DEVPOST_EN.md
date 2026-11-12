@@ -1,6 +1,6 @@
 # The Listening Ledger — English submission draft
 
-**Preparation draft, updated 11 November 2026. Not submitted.** Do not publish this file unchanged: complete the verified links and testing route below, align every claim with the frozen build, and retain unresolved limitations. Formal entry fields may differ; copy the appropriate sections into the actual form. Team identity, eligibility statements and the final submission must be checked by the entrant.
+**Preparation draft, updated 12 November 2026. Not submitted.** Do not publish this file unchanged: complete the remaining video link and private testing route below, align every claim with the frozen build, and retain unresolved limitations. Formal entry fields may differ; copy the appropriate sections into the actual form. Team identity, eligibility statements and the final submission must be checked by the entrant.
 
 ## Short description
 
@@ -69,10 +69,10 @@ This is a single-user local prototype for examples and authorized Sandbox data, 
 
 | Required item | Current value |
 |---|---|
-| Public source repository | **Not published — insert only a verified public URL.** |
+| Public source repository | [a2683452941-rgb/the-listening-ledger](https://github.com/a2683452941-rgb/the-listening-ledger), public `main`; initial complete-source commit [071f61d](https://github.com/a2683452941-rgb/the-listening-ledger/commit/071f61da11a623f9744519d793dea051833bd5c8), anonymous source-document access verified on 12 November. |
 | Frozen release tag/hash | Local source-package hashes exist in `RELEASE_MANIFEST.json` and adjacent `release-result.json`; **no public tag or matching video yet**. |
 | Public video, less than three minutes | **Not recorded/uploaded.** |
-| Local running instructions | Repository `README.md` and `docs/TESTING.md`; final public URLs pending. |
+| Local running instructions | Public [README](https://github.com/a2683452941-rgb/the-listening-ledger/blob/main/README.md) and [English testing guide](https://github.com/a2683452941-rgb/the-listening-ledger/blob/main/docs/TESTING.md). |
 | Dedicated free live-service testing access | **Configuration verified in a fresh local copy; private access route and delivery pending.** Continued availability must still be arranged. Do not expose personal keys in this public description. |
 | PayPal real-purchase workflow | **Controlled G1 completed on 11 November, 19:41–19:50 Beijing.** [Public verification summary](PUBLIC_VERIFICATION.md); source amount, budget and history remained intact after sync/restart. |
 | Asset attribution | Repository `docs/ASSET_SOURCES.md`, corresponding license records, and `THIRD_PARTY_NOTICES.md`. |

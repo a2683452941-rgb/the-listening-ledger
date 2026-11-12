@@ -147,7 +147,7 @@ For art, inspect both covers, three core date units, six category units, continu
 - [x] Real eligible PayPal purchase returned and saved; 14:07 Beijing evidence matches the verified capture and passes domain evaluation.
 - [x] Existing purchase displayed in the browser, reviewed with live AI and separate human controls, synchronized again and recovered after service restart without duplication; controlled G1 completed at 19:41–19:50 Beijing.
 - [ ] Dedicated free AI/Sandbox test access privately delivered and actually tested, available through the PRD's judging-end date of 16 December 2026, 00:00 Beijing.
-- [ ] Public repository opens without login; code, required images and their licenses are available; no secrets/private database/backups.
+- [x] Public source tree matches the audited 103 files; anonymous raw-file download of the complete commit passed manifest checks, fresh-directory startup and save/restart recovery without credentials or previous data (12 November; [publication evidence](PUBLIC_VERIFICATION.md)). Ordinary Git clone and ZIP download did not complete because of network stalls/timeouts; the verified method was individual raw-file download. No secrets/private database/backups included.
 - [ ] Actual under-three-minute English-translated video opens publicly and includes real system audio.
 - [ ] Repository, video and testing links in the final submission are correct; submitted status is recorded.
 

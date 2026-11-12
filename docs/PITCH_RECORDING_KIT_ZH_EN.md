@@ -145,7 +145,7 @@ SRT 包含旁白与试听句子；它不会自动翻译整块界面。剪辑时�
 
 **The Listening Ledger — Hear, Review, and Understand Your Spending | PayPal AI Hackathon**
 
-英文简介可复制后补充实际链接；方括号字段在发布前必须替换，未取得的链接不要假填：
+英文简介已填入本轮核实的公开仓库与文档链接；视频发布前按实际录制结果检查文字。公开操作指南不等于私密评审配置已交付，后者仍需安排：
 
 ```text
 The Listening Ledger is a local spending-review journal with page turns, status sounds, transparent AI suggestions, and user-controlled limits.
@@ -156,10 +156,10 @@ PayPal: authorized Sandbox Transaction Search, purchase filtering, source and co
 AI: purpose interpretation with quoted evidence. People confirm categories and recognition; program rules calculate budget status.
 Sound: application-generated tones and actual device speech. The voice-setting sample is separate from the imported transaction.
 
-Source and local run instructions: [VERIFIED PUBLIC REPOSITORY URL]
-Judging instructions: [VERIFIED JUDGING INSTRUCTIONS URL]
-Asset credits and generation disclosures: [REPOSITORY docs/ASSET_SOURCES.md URL]
-Third-party software credits: [REPOSITORY THIRD_PARTY_NOTICES.md URL]
+Source and local run instructions: https://github.com/a2683452941-rgb/the-listening-ledger
+Public testing guide (private live-service configuration handoff still pending): https://github.com/a2683452941-rgb/the-listening-ledger/blob/main/docs/JUDGING_ACCESS.md
+Asset credits and generation disclosures: https://github.com/a2683452941-rgb/the-listening-ledger/blob/main/docs/ASSET_SOURCES.md
+Third-party software credits: https://github.com/a2683452941-rgb/the-listening-ledger/blob/main/THIRD_PARTY_NOTICES.md
 
 Current scope: one local user and a controlled Sandbox account. No live-funds access, fraud detection, or measured user-outcome claims.
 ```

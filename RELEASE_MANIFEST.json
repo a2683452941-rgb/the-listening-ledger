@@ -1,8 +1,8 @@
 {
   "version": "0.4.0",
-  "createdAt": "2026-11-11T23:11:16.768Z",
+  "createdAt": "2026-11-12T00:35:23.007Z",
   "node": "v24.22.1",
-  "sourceDigest": "50f008bc08373952c1b9d9039d62b070dc4707c07b8f397a2a39f4a14ecb9aa5",
+  "sourceDigest": "61d1fdfbe8c7f81783664b55f0794be8846c875c618dc616c0ee973093ebbb7f",
   "files": [
     {
       "path": ".env.example",
@@ -26,8 +26,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 14456,
-      "sha256": "7cbeadd70e90f1669ac5c6355859cfb28dbe53b0370727e4fee0db738c051a54"
+      "bytes": 14912,
+      "sha256": "be683568b42e04a2622fe8b030447f49818d2170fcfc11f8abd5c1e82bfda652"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -51,33 +51,33 @@
     },
     {
       "path": "docs/DEVPOST_EN.md",
-      "bytes": 12206,
-      "sha256": "3988d9fe7c2d9a9bcf89daae471c8712ae5b8938a5128aa7b3378e176bc5e0d9"
+      "bytes": 12612,
+      "sha256": "c4fdf1bf8d9a4224f89503a3ce660a9cc3a18203e9af591d89d1089c092f7d64"
     },
     {
       "path": "docs/FINAL_SUBMISSION_AUDIT_ZH.md",
-      "bytes": 10954,
-      "sha256": "54ed656a65e5a5cb4914e72a547a6c32dcce4a2348330fe809dab5d05986f0eb"
+      "bytes": 11632,
+      "sha256": "ddf09ce4cc1e423a4e97e3596c19fb9e4cdc6b65c646de7906860cf31836efc5"
     },
     {
       "path": "docs/JUDGING_ACCESS.md",
-      "bytes": 6144,
-      "sha256": "860bc429ac7261ec4eeb26b6e1fb6291c4c0e94baccc93bddfba3b6dd1d394b8"
+      "bytes": 6395,
+      "sha256": "cc6606dfb89eba68f6bae2c8c85fd9d01b9e6fa22ada79ff203a7ba827896ca1"
     },
     {
       "path": "docs/KNOWN_LIMITATIONS.md",
-      "bytes": 8637,
-      "sha256": "37d6d54d9aaea047eb6407e95ae6e85c56aad652ffee528588f155a514515a69"
+      "bytes": 8904,
+      "sha256": "7d51dd50d7776135c3dab0f1980035a9f9f756e59fc32d80ed63d0a0e527e123"
     },
     {
       "path": "docs/PITCH_RECORDING_KIT_ZH_EN.md",
-      "bytes": 20685,
-      "sha256": "83d742d22d0f7e38bc25dea8bf974f5385f07edc234b4913e2d564447815b397"
+      "bytes": 20993,
+      "sha256": "2e5d774660797714e61aa27f47c370266c4823800d05fbb35bd3f95556bd24bd"
     },
     {
       "path": "docs/PUBLIC_VERIFICATION.md",
-      "bytes": 6609,
-      "sha256": "eac487ed5fba4885f8d0bbe181e895a22ca323bee35241cfed11841f924934bf"
+      "bytes": 8058,
+      "sha256": "e09891c683f67c615dfeee7d33de8285a8d42a819fd9f20e6b5a8cbe604a8848"
     },
     {
       "path": "docs/SOUND_DESIGN.md",
@@ -86,13 +86,13 @@
     },
     {
       "path": "docs/TEAMMATE_GUIDE_ZH.md",
-      "bytes": 23993,
-      "sha256": "c434ff25ac622e4a54dbed207cf7dc779832e38d7c727141e00d9d91574b2cc6"
+      "bytes": 24215,
+      "sha256": "8ed95eecdc59a67c240bedbb533ecf9ea7f33c71834ee275a304c39585260e89"
     },
     {
       "path": "docs/TESTING.md",
-      "bytes": 23571,
-      "sha256": "c0afdc0be3052a09da0ab08276357ae062f841ca1187be76a68f6a8a33596768"
+      "bytes": 23903,
+      "sha256": "bbaea0d11ea7cec302e42b97eb94323983370858350d37b343ed0a0f4a2fb767"
     },
     {
       "path": "docs/沙箱购买联调.md",
@@ -512,7 +512,7 @@
     {
       "path": "验收/v4-release-check.md",
       "bytes": 2085,
-      "sha256": "3322cd9879b0bfef758fa95f98790d7b4e6847057a521806f35191396ac4b3b9"
+      "sha256": "d7adc9cfac7f6df9248e07ada404d7d9ee4be6f4616d53b49dc9b7b6c12529e7"
     }
   ]
 }

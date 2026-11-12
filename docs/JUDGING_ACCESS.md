@@ -1,6 +1,6 @@
 # Free judging access and local reproduction
 
-Updated 11 November 2026. This project runs locally; public deployment is not required for this build. This guide distinguishes the free offline demonstration from real external services.
+Updated 12 November 2026. This project runs locally; public deployment is not required for this build. Source is available in the [public repository](https://github.com/a2683452941-rgb/the-listening-ledger). This guide distinguishes the free offline demonstration from real external services; public source access does not complete the pending private configuration handoff.
 
 ## Start the offline book
 
@@ -48,7 +48,7 @@ The payer must be the account whose history the journal is authorized to read. A
 - [x] Test the intended judging configuration in a clean local copy, without the author's existing database or saved journal state (11 November, 20:56–21:11 Beijing).
 - [x] Confirm the documented model works with the new key and the existing controlled Sandbox app has query permission and the suitable USD 12.00 record.
 - [ ] Keep that access working for the full judging period.
-- [ ] Publish only the audited source payload; never include `.env`, `.env.sandbox-checkout`, `data/`, logs, private raw evidence or passwords.
+- [x] Publish only the audited source payload (12 November; see [publication evidence](PUBLIC_VERIFICATION.md)); no `.env`, `.env.sandbox-checkout`, `data/`, logs, private raw evidence or passwords included.
 
 The release checker exercises offline startup and persistence with all service variables empty. The separate author-side live configuration check above does not replace the pending private handoff or certify future availability. See [PUBLIC_VERIFICATION.md](PUBLIC_VERIFICATION.md) for the current, identifier-free evidence summary.
 
