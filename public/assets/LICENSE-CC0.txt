@@ -1,0 +1,9 @@
+Third-party art assets
+
+The images in art/ are crops or compressed derivatives of the individual works documented in asset-manifest.json. Those source images are supplied under Creative Commons CC0 1.0 Universal. They are not relicensed as project code.
+
+CC0 full legal text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+Met policy: https://www.metmuseum.org/policies/image-resources
+ambientCG policy: https://docs.ambientcg.com/license/
+
+Credit and source identification remain in asset-manifest.json and docs/ASSET_SOURCES.md for provenance. No affiliation or endorsement by the museums, artists or material provider is claimed.

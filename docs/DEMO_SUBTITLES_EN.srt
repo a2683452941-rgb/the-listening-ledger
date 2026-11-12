@@ -1,0 +1,136 @@
+1
+00:00:00,000 --> 00:00:04,800
+A transaction list shows what I spent.
+It does not make me want to review it.
+
+2
+00:00:04,800 --> 00:00:13,000
+The Listening Ledger turns that review
+into a book I can open and explore.
+
+3
+00:00:13,000 --> 00:00:17,000
+Each purchase has a short sound.
+Green means within the applicable limits.
+
+4
+00:00:17,000 --> 00:00:24,000
+Red needs attention. Blue means
+there is still something to check.
+
+5
+00:00:24,000 --> 00:00:27,000
+[Warm chord — within limits]
+
+6
+00:00:27,000 --> 00:00:30,000
+[Wooden taps — needs attention]
+
+7
+00:00:30,000 --> 00:00:33,000
+[Glass tones — needs review]
+
+8
+00:00:33,000 --> 00:00:39,000
+Now I switch to PayPal Sandbox.
+This authorized test account contains a twelve-dollar purchase.
+
+9
+00:00:39,000 --> 00:00:47,000
+The importer preserves its amount, currency and source,
+while excluding non-purchase events. No real money moves.
+
+10
+00:00:47,000 --> 00:00:53,500
+This purchase was a virtual study notebook
+used for testing. I supplied that context.
+
+11
+00:00:53,500 --> 00:01:01,000
+Here is the saved review from an actual DeepSeek request,
+with the original input still visible.
+
+12
+00:01:01,000 --> 00:01:08,000
+The model suggested Education and quoted
+the words supporting that suggestion.
+
+13
+00:01:08,000 --> 00:01:12,500
+It did not decide whether
+I recognized the purchase.
+
+14
+00:01:12,500 --> 00:01:18,000
+I accepted the category, then separately confirmed
+that I knew this transaction.
+
+15
+00:01:18,000 --> 00:01:23,500
+These are two recorded human decisions.
+The original twelve-dollar amount stays unchanged.
+
+16
+00:01:23,500 --> 00:01:30,000
+The journal keeps the source information and my review
+separately, so I can revisit both.
+
+17
+00:01:30,000 --> 00:01:35,000
+[Device voice · voice-setting sample]
+Pinecone Coffee: eighteen yuan.
+
+18
+00:01:35,000 --> 00:01:39,500
+This did not trigger
+your overspending alert.
+
+19
+00:01:39,500 --> 00:01:45,000
+Another purchase is twenty-six dollars and fifty cents.
+Its category still needs review.
+
+20
+00:01:45,000 --> 00:01:51,000
+My budget is a rule I set,
+not a judgment from AI.
+
+21
+00:01:51,000 --> 00:01:58,500
+Changing the monthly limit from twenty-five dollars
+to ten previews an alert.
+
+22
+00:01:58,500 --> 00:02:04,000
+I cancel the change.
+The original budget remains.
+
+23
+00:02:04,000 --> 00:02:11,500
+I can also open the Spending Collection.
+It groups the same records by category, with a different page design.
+
+24
+00:02:11,500 --> 00:02:18,000
+The purchase and my saved decision
+remain the same.
+
+25
+00:02:18,000 --> 00:02:25,000
+Reopening restores the review.
+Repeat synchronization and restart recovery were also verified.
+
+26
+00:02:25,000 --> 00:02:31,000
+This is a working local prototype,
+tested with one controlled Sandbox account.
+
+27
+00:02:31,000 --> 00:02:36,000
+Listen for a signal. Inspect the evidence.
+Make the decision yourself.
+
+28
+00:02:36,000 --> 00:02:40,000
+The Listening Ledger:
+a spending review you can hear and revisit.

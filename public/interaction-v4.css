@@ -1,0 +1,47 @@
+/* Reading controls remain outside the moving sheets, within easy reach. */
+.reading-dock{position:relative;top:auto;z-index:auto;margin:0 0 22px;padding:8px 16px 12px;background:#faf7eef5;border:1px solid #b9af9a;box-shadow:0 5px 16px #342e2312;display:grid;grid-template-columns:1fr 1.8fr;gap:4px 20px;backdrop-filter:blur(8px)}
+.is-closed .reading-dock{display:none}
+.reading-dock .reader-bottom{padding:0;gap:12px;flex-wrap:wrap}
+.reading-dock .turn-hint{width:100%;font-size:12px}
+.reading-dock .reader-player{margin:0;width:100%;max-width:none;align-items:flex-end;gap:4px}
+.reading-dock .player-line{justify-content:flex-end;font-size:13px}
+.reading-dock .player-buttons{justify-content:flex-end;gap:7px;flex-wrap:wrap}
+.reading-dock .primary{font-size:14px;padding:7px 16px;min-height:44px}
+.reading-dock button{min-height:44px;min-width:44px;font-size:14px}
+.reading-dock .icon-button{flex:0 0 44px;width:44px}
+.reading-dock .budget-slip{grid-column:1/-1;border-top:1px solid #d4cdbf;padding-top:9px;gap:12px;font-size:13px;color:#504f43;justify-content:flex-start}
+.reading-dock .budget-slip>strong{font-size:22px}
+.reading-dock .budget-slip>small,.reading-dock .budget-dates,.coverage-note{font-size:12px;opacity:1}
+.coverage-note{margin-left:auto;color:#6c6658}
+.reading-dock .volume-label{font-size:13px;display:flex;align-items:center;gap:4px;margin:0}
+.reading-dock .volume-label input{width:65px;min-height:44px}
+.book-tools button,.sound-toggle{min-height:44px;font-size:14px}
+.reading-context{font-size:13px;color:#615e52}
+.book-end-links{flex-wrap:wrap}.book-end-links button{font-size:14px;min-height:44px}
+.reader-pagination{font-size:14px;gap:12px}
+.node-alert{display:block;color:#983f34;font-size:12px!important;line-height:1.4}
+.map-collage .collage-tag{display:none}
+.art-load-note{display:block;position:absolute;inset:40% 8% auto;font:14px/1.6 system-ui;color:#635d51;text-align:center}
+.reading-leaf .node-caption{min-width:118px;background:#fffcf2f5}
+.reading-leaf .node-caption strong{font-size:15px;line-height:1.5;white-space:normal;overflow-wrap:anywhere}
+.reading-leaf .node-caption>span{font-size:13px;line-height:1.5}
+.reading-leaf .node-ring{min-width:44px;min-height:44px}
+.leaf-running,.leaf-caption,.review-bookmark small,.leaf-subtitle{font-size:12px;letter-spacing:.3px}
+.review-bookmark strong{font-size:16px}.quiet-note{font-size:14px}.quiet-note>button{font-size:13px}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible,#paper-reader:focus-visible{outline:3px solid #3e7394;outline-offset:3px}
+dialog{color:#394039}dialog p{line-height:1.75}dialog .small,dialog .muted,dialog small{font-size:14px;color:#62695b}dialog button{min-height:44px}
+dialog .field,dialog .check{font-size:15px;line-height:1.6}dialog input,dialog select,dialog textarea{font-size:16px}
+.readout{padding:14px 0}.readout>summary{font-size:15px;cursor:pointer;min-height:44px;align-content:center}
+.readout[open]>summary{margin-bottom:8px}.readout h3{display:none}
+.detail-task{margin:12px 0;padding-bottom:14px}.detail-task>span{font-size:14px}
+.reason-box{padding:14px 18px}.reason-box h3{margin:0 0 6px}.reason-box p{margin:7px 0}.reason-box small{line-height:1.6}
+.ai-task-body>p:not(.ai-steps),.ai-original p,.ai-task-body>.check,.ai-steps{font-size:15px}
+.task-ai>summary small,.ai-original small,.example-chips small,.generation-info,.ai-result-label{font-size:13px}
+.example-chips button,.ai-result blockquote button{font-size:14px}.generation-info code{display:block;overflow-wrap:anywhere}
+.verified-recap{border-left:3px solid #75886b;padding:8px 16px;background:#f0efe5;margin:20px 0}.verified-recap h3{margin:0}.verified-recap-text{white-space:pre-line}
+.source-options button{font-size:15px}.source-options button span{font-size:13px;line-height:1.5}
+.summary-sources button{font-size:14px;min-height:44px}
+@media(max-width:1050px){.reading-dock{gap:4px 10px;padding:8px 12px}.reading-dock .player-buttons{gap:4px}.reading-dock .reader-bottom{max-width:none}.reading-dock .turn-hint{display:none}.book-tools button{font-size:13px;padding:7px 8px}}
+@media(max-width:800px){.reading-dock{grid-template-columns:1fr;gap:3px;padding:6px 10px 9px;top:0}.reading-dock .reader-bottom{max-width:none;flex-wrap:nowrap}.reading-dock .turn-hint{display:none}.reading-dock .reader-player{align-items:stretch}.reading-dock .player-line{justify-content:center;font-size:12px}.reading-dock .player-buttons{justify-content:center;gap:4px}.reading-dock .budget-slip{padding-top:5px;gap:4px 10px}.reading-dock .budget-dates{width:auto;text-align:left}.reading-dock .budget-slip>span:first-child{font-size:12px}.coverage-note{margin-left:0}.reading-context{font-size:12px;gap:8px}.reading-context>span{font-size:12px}.book-tools{gap:4px}.book-tools button{font-size:12px;min-height:44px}.reading-dock #back-cover{font-size:13px}.reading-dock .budget-slip>strong{font-size:19px}.reading-dock #budget-open{padding:0 5px;min-height:32px}.reading-dock .volume-label{display:flex!important;font-size:12px}.reading-dock .volume-label input{width:45px}.reading-dock .player-buttons button{font-size:13px}.reading-leaf .node-caption{width:112px;min-width:0}.reading-leaf .node-caption strong{font-size:14px}.reading-leaf .node-caption>span{font-size:12px}.leaf-running{font-size:10px}.leaf-caption{font-size:11px}.book-end-links{gap:8px}.book-end-links button{font-size:13px}.task-ai>summary{flex-wrap:wrap;gap:4px}.task-ai>summary small{font-size:12px}.masthead>button{font-size:12px;min-height:44px}.reading-dock #replay,.reading-dock #skip{font-size:12px;padding:4px}.reading-dock .primary{padding:5px 9px}.reading-dock .icon-button{padding:5px 8px}}
+@media(max-width:430px){.sound-toggle{flex-shrink:0;white-space:nowrap;font-size:12px}.reading-context{gap:8px;margin-bottom:10px}.reading-context>span{line-height:1.6;font-size:11px}.reading-dock{gap:0;padding:2px 8px 5px}.reading-dock .reader-bottom{padding:0}.reading-dock .reader-player{gap:0}.reading-dock .player-line{line-height:1.4;min-height:18px}.reading-dock .player-buttons{gap:2px;flex-wrap:nowrap}.reading-dock .player-buttons button{font-size:12px}.reading-dock .volume-label{font-size:11px}.reading-dock .volume-label input{width:42px}.reading-dock .budget-slip{gap:3px 7px;line-height:1.4}.reading-dock .budget-slip>span:first-child{font-size:0}.reading-dock .budget-slip>span:first-child:after{content:'已记';font-size:12px}.reading-dock .budget-dates{display:none}.reading-dock[data-coverage=complete] .coverage-note{display:none}.reading-dock #budget-open{min-height:44px;padding:0 4px;font-size:12px}.reading-dock .budget-slip>strong{font-size:18px}.reading-dock .budget-slip>small{font-size:12px}.reading-dock .coverage-note{width:100%;font-size:12px}}
+@media(prefers-reduced-motion:reduce){.reading-dock{backdrop-filter:none}*{scroll-behavior:auto!important}}

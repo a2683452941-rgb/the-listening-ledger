@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {Transport} from '../public/transport.js';
+function setup(){let now=0,id=0;const tasks=new Map(),arrivals=[];const clock={now:()=>now,set:(f,t)=>{tasks.set(++id,{f,at:now+t});return id;},clear:i=>tasks.delete(i)};const t=new Transport({clock,arrive:i=>arrivals.push(i),travel:100,hold:100});const advance=ms=>{const end=now+ms;for(;;){const next=[...tasks].sort((a,b)=>a[1].at-b[1].at)[0];if(!next||next[1].at>end)break;now=next[1].at;tasks.delete(next[0]);next[1].f();}now=end;};return {t,advance,arrivals,tasks};}
+test('arrives exactly once per node and stops at the current page end',()=>{const {t,advance,arrivals,tasks}=setup();t.load(3);t.start();advance(1000);assert.deepEqual(arrivals,[0,1,2]);assert.equal(t.phase,'ended');assert.equal(t.running,false);assert.equal(tasks.size,0);});
+test('hover-style pause during travel resumes remaining duration',()=>{const {t,advance,arrivals}=setup();t.load(2);t.start();advance(40);t.pause();advance(500);assert.deepEqual(arrivals,[]);assert.equal(t.progress,.4);t.start();advance(59);assert.deepEqual(arrivals,[]);advance(1);assert.deepEqual(arrivals,[0]);});
+test('resume during hold does not replay the interrupted note',()=>{const {t,advance,arrivals}=setup();t.load(2);t.start();advance(140);t.pause();advance(300);t.start();advance(300);assert.deepEqual(arrivals,[0,1]);});
+test('changing page cancels pending callbacks and begins at its own first node',()=>{const {t,advance,arrivals}=setup();t.load(4);t.start();advance(50);t.load(1);advance(400);assert.deepEqual(arrivals,[]);t.start();advance(300);assert.deepEqual(arrivals,[0]);});
+test('seek and empty page never advance out of bounds',()=>{const {t,advance,arrivals}=setup();t.load(0);t.start();advance(1000);assert.equal(t.running,false);t.load(2);t.seek(99,true);advance(500);assert.deepEqual(arrivals,[1]);});
+test('repeated play does not schedule duplicate timers',()=>{const {t,advance,arrivals}=setup();t.load(2);t.start();t.start();t.start();advance(1000);assert.deepEqual(arrivals,[0,1]);});

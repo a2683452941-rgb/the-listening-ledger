@@ -1,0 +1,14 @@
+.env
+*.log
+node_modules/
+data/
+_history/
+_release/
+.env.*
+!.env.example
+!.env.sandbox-checkout.example
+验收/*
+!验收/v4-release-check.md
+验收截图/
+AI实测-*.json
+AI实测-*.md

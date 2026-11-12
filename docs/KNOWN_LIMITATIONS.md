@@ -1,0 +1,43 @@
+# Known limitations and unfinished evidence
+
+Updated 11 November 2026 for v0.4. This list distinguishes a bounded product choice from a missing acceptance result. Do not replace these statements with “all complete” because local tests pass.
+
+## Verified workflow and remaining submission gates
+
+1. **The controlled real-purchase workflow is verified.** Between 19:41 and 19:50 Beijing on 11 November, the existing USD 12.00 Sandbox purchase completed the real browser review: live deepseek-flash suggested Education with an exact quotation; accepting the category kept the record blue; separately recognizing the test purchase made it green. Repeat Transaction Search at 19:45:13 retained one eligible purchase and three excluded events with no duplicate. The provider amount (1200 cents) and raw uncategorized field stayed unchanged; Education is a review override. The USD 25 monthly budget and revision 2 stayed unchanged. After a service restart and reload, the Spending Collection Education page recovered the same amount, state and two history entries. Saved edits, history, budget and AI acceptance time were compared and matched. No new order, payment or refund was made. See [PUBLIC_VERIFICATION](PUBLIC_VERIFICATION.md). This does not prove arbitrary-account access, multi-page live reporting or network-failure recovery.
+2. **The judging configuration is locally verified; external access is not yet arranged.** A fresh copy with a dedicated model key and the existing controlled Sandbox app passed live classification, manual review, repeat synchronization and restart recovery on 11 November, 20:56–21:11 Beijing. This does not establish private delivery to judges or uninterrupted free availability throughout judging. The actual private access route and handoff remain pending. Do not post personal credentials publicly or require judges to purchase API access.
+3. **No public repository, public video or final Devpost submission has been recorded.** Draft documents and local licenses are preparation, not publication. Hosting is deliberately deferred and cannot be achieved safely by simply changing the bind address.
+4. **Interaction acceptance remains partial.** The [clean-package report](../验收/v4-release-check.md) records the exact final offline/HTTP count and separate-directory persistence checks. Older 104/131-test counts are historical. Full drag/keyboard/text-scaling, physical-device and headphone checks remain separate; local packaging is not public release. See [TESTING](TESTING.md).
+
+## Product and data boundaries
+
+- Single-user local prototype, controlled Sandbox account, USD/CNY only. It is not a consumer bank aggregator, multi-merchant authorization service, financial advice service or production accounting system.
+- Totals are completed supported purchase events **before refunds**, not net spending, available funds or all account activity. Income, fees, transfers, Payouts, refunds themselves and unsupported events are excluded with reasons. Unreliably linked refunds are not paired by guessing.
+- Reporting can lag. Complete requested windows do not prove instantaneous, complete account history. Coverage/cutoff are disclosed; unknown coverage cannot establish available allowance or a green assessment.
+- Displaying one day/category does not change a limit period. Date boundaries use Asia/Shanghai. No multi-timezone controls or foreign-exchange conversion are provided.
+- A source amount/status change retains prior human decisions as history and can require new review. The user cannot edit provider amounts through classification controls.
+- Blue means needs review/assessment; red means a configured rule needs attention; green means no applicable trigger under sufficient known data. None is a merchant-safety, fraud or moral spending judgment.
+
+## AI and privacy
+
+- Six live synthetic classifications and one fact-selection recap are recorded for the initial v0.4 prompt. This is a small engineering check, not a representative benchmark or a market/user study. “match” in the evidence is a narrow expected-category comparison, not a general accuracy measure.
+- The initial mixed-purpose follow-up asked for course/software amounts. A targeted real rerun with prompt 4.1 asks which purpose was primary and still leaves the category undecided. The evidence keeps both attempts. This resolves that example's observed question quality; it does not prove all mixed-purpose cases work.
+- Exact citation validation checks quotation membership, not truth of the reasoning. Human review remains necessary. Adoption does not automatically recognize a merchant.
+- Recap prose and amounts are program templates. The model selects allowed fact IDs; it is not freely explaining the entire financial situation. Required coverage and overage facts cannot be hidden by model selection.
+- Request-count quotas are not monetary caps. Repeated different inputs can incur provider charges; no new paid provider has been added. Cache and UTC-day quota behavior are documented in the README.
+- Classification omits raw amount/account fields and redacts some obvious identifiers. This is not comprehensive de-identification. Users must review the fields they consent to send. Recap facts include aggregate money and derived budget information.
+
+## Sound, interaction and art
+
+- Speech is a browser/OS device voice, not DeepSeek TTS. Available Chinese voices and quality differ by device/browser; some listed voices may be online. There is no natural-voice guarantee. One user confirmed the revised status-tone volume was appropriate; that does not establish device-voice naturalness or comfort for every listener.
+- The first sound revision was hard to distinguish. The user confirmed revision 2's warm chord, wooden taps and glass bells were distinguishable, but requested more volume; the same user then confirmed revision 4 volume was appropriate. This is one-person feedback. Mock/signal checks do not establish comfort, pronunciation or physical gestures. Five record readings and the USD 26.50 audition were triggered in the actual browser with matching visible text; stop/reopen feedback and the map/mute/turn/close controls were checked without console errors. Human pronunciation/naturalness, ten consecutive nodes and physical residual-audio checks remain outside that evidence. See [SOUND_DESIGN](SOUND_DESIGN.md).
+- Full English UI is an optional enhancement, not assumed complete. Current Chinese operation labels are translated in the English testing guide. Submission footage must fully translate its demonstrated operations and results.
+- Art combines five pre-generated AI theme illustrations with retained physical-source materials. It does not generate a unique illustration for every new date: confirmed categories and supported merchant themes select existing assets locally; unsupported or uncertain content is left unillustrated. No image-model call occurs on page turns. Illustrations and physical materials are not proof of actual purchased items, geography or weather. Generated images are labelled separately from the 18 retained CC0 derivatives, and external materials are not described as the team's own photographs or hand-made originals. See [ASSET_SOURCES](ASSET_SOURCES.md) and the [image prompts](../public/assets/illustration-prompts.json).
+- Minimum art scope is two covers, three polished date units and six category units. Other pages use deterministic combinations, not 61 individually hand-painted originals. Extra date compositions are enhancement work. Final visual acceptance must inspect actual loaded pages, intermediate folds, small screens and the theme sampler.
+- Four desktop-emulated viewports, a focused keyboard page turn/bookmark recovery and image-failure fallback have browser evidence. Complete keyboard tasks, 200% text, intermediate drag states and physical mobile/Safari coverage remain unverified. Contrast/touch-target goals are not an accessibility certification.
+
+## Validation not yet claimed
+
+No real-user interviews, three-person task observation, payment willingness, measured efficiency improvement, reduced anxiety, disability-specific efficacy or market-wide demand has been established. The intended audience and value remain product hypotheses. Keep a direct record index so users do not have to traverse animation to find one purchase.
+
+The implementation does not automatically pay, refund, score merchants, recommend investments, monitor fraud, connect every PayPal account, or guarantee event eligibility. Remaining release gates and their evidence are tracked individually rather than hidden behind a test count.
