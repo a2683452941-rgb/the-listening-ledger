@@ -7,7 +7,7 @@ import {createServer} from 'node:net';
 import {request as httpRequest} from 'node:http';
 import {once} from 'node:events';
 import {parseEnv} from 'node:util';
-import {validatePublicFile,publicMarkdown,checkLocalLinks} from './release-policy.mjs';
+import {validatePublicFile,publicMarkdown,checkLocalLinks,localOnlyDocuments} from './release-policy.mjs';
 import {setTimeout as delay} from 'node:timers/promises';
 import {dirname,join,relative,resolve,sep} from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
@@ -31,6 +31,7 @@ async function walk(directory){
  const result=[];
  for(const entry of await readdir(join(root,directory),{withFileTypes:true})){
   const name=directory+'/'+entry.name;
+  if(localOnlyDocuments.has(name))continue;
   if(forbiddenNames.has(entry.name)||entry.name.endsWith('.log'))throw Error('Unexpected private path inside allowlist: '+name);
   if(entry.isSymbolicLink())throw Error('Release does not follow symlinks: '+name);
   if(entry.isDirectory())result.push(...await walk(name));

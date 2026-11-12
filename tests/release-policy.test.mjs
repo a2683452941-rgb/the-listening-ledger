@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {validatePublicFile,publicMarkdown,checkLocalLinks} from '../scripts/release-policy.mjs';
 
 test('release rejects private paths and filled main/helper credential templates',()=>{
+ for(const name of ['docs/TEAMMATE_GUIDE_ZH.md','docs/PITCH_RECORDING_KIT_ZH_EN.md','docs/DEMO_SUBTITLES_EN.srt','docs/DEMO_SCRIPT_EN.md','docs\\TEAMMATE_GUIDE_ZH.md'])assert.throws(()=>validatePublicFile(name,Buffer.from('')),/Local-only document/);
  for(const name of ['.env','.env.sandbox-checkout','.env.judging','data/ledger.sqlite','lib/local.log','_history/old.js'])assert.throws(()=>validatePublicFile(name,Buffer.from('')),/Private path/);
  for(const [name,key] of [['.env.example','AI_API_KEY'],['.env.sandbox-checkout.example','PAYPAL_TEST_MERCHANT_CLIENT_SECRET']]){
   assert.doesNotThrow(()=>validatePublicFile(name,Buffer.from(key+'=\n')));

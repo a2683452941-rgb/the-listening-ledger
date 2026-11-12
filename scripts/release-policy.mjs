@@ -1,8 +1,11 @@
 import {posix} from 'node:path';
 import {parseEnv} from 'node:util';
 
+export const localOnlyDocuments=new Set(['docs/TEAMMATE_GUIDE_ZH.md','docs/PITCH_RECORDING_KIT_ZH_EN.md','docs/DEMO_SUBTITLES_EN.srt','docs/DEMO_SCRIPT_EN.md']);
+
 // Release checks report filenames and rule names only; rejected data is never echoed.
 export function validatePublicFile(name,bytes,{privateValues=[]}={}){
+ if(localOnlyDocuments.has(name.replaceAll('\\','/')))throw Error('Local-only document rejected: '+name);
  const parts=name.replaceAll('\\','/').split('/');
  if(parts.some(p=>['.git','data','_history','_release','node_modules'].includes(p))||parts.some(p=>p.startsWith('.env')&&!['.env.example','.env.sandbox-checkout.example'].includes(p))||/\.(?:log|sqlite|sqlite3|db)(?:-wal|-shm)?$/i.test(name))throw Error('Private path rejected: '+name);
  const text=bytes.toString('utf8');

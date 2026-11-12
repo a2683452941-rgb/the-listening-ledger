@@ -6,7 +6,7 @@ A local spending journal you explore by sight, touch and sound. Open a Daily Jou
 
 ## Run locally
 
-For team handoff and submission preparation: [Chinese teammate guide](docs/TEAMMATE_GUIDE_ZH.md), [bilingual recording kit and verified references](docs/PITCH_RECORDING_KIT_ZH_EN.md), [English subtitle draft](docs/DEMO_SUBTITLES_EN.srt), and [five-gate submission audit](docs/FINAL_SUBMISSION_AUDIT_ZH.md). A script, subtitle file or checklist is not evidence of a recorded video or completed submission.
+See the [five-gate submission audit](docs/FINAL_SUBMISSION_AUDIT_ZH.md) for the current delivery status. Team handoff guides, recording scripts and subtitles are kept locally and excluded from the public source package.
 
 Use Node.js **22.13 or later**, with built-in SQLite, and a current desktop browser. Windows is the primary development platform. Other operating systems and physical mobile devices need separate verification. No npm packages need installing; the page-turning library is vendored.
 
